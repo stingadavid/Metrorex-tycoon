@@ -116,8 +116,11 @@ void testeazaMagistrala() {
     m2.insereazaStatie(2, Statie{"Universitate", "Centru", 700, 350000.0, false});
 
     m2.eliminaStatieLaIndex(2); // scoate "Universitate"
-    assert(m2.eliminaStatie("Timpuri Noi"));
-    assert(!m2.eliminaStatie("Statie Inexistenta"));
+    const bool aEliminatTimpuriNoi = m2.eliminaStatie("Timpuri Noi");
+    assert(aEliminatTimpuriNoi);
+
+    const bool aEliminatInexistenta = m2.eliminaStatie("Statie Inexistenta");
+    assert(!aEliminatInexistenta);
 
     bool aAruncatOutOfRange = false;
     try {
@@ -147,13 +150,16 @@ void testeazaMagistrala() {
     assert(m2.calculeazaCapacitateTotala() == 2400);
 
     // Caz A: cerere > capacitate (ora 8: cerere 3440 > capacitate 2400 -> transporta 2400 * 3.0 = 7200.0 lei)
-    assert(std::abs(m2.simuleazaOraTrafic(8) - 7200.0) < 1e-6);
+    const double venitCazA = m2.simuleazaOraTrafic(8);
+    assert(std::abs(venitCazA - 7200.0) < 1e-6);
 
     // Caz B: cerere < capacitate (ora 12: cerere 2150 < capacitate 2400 -> transporta 2150 * 3.0 = 6450.0 lei)
-    assert(std::abs(m2.simuleazaOraTrafic(12) - 6450.0) < 1e-6);
+    const double venitCazB = m2.simuleazaOraTrafic(12);
+    assert(std::abs(venitCazB - 6450.0) < 1e-6);
 
     // Caz C: noapte (ora 2: cerere 0 -> venit 0.0 lei, dar trenurile ruleaza pt probe/curatenie si se uzeaza)
-    assert(std::abs(m2.simuleazaOraTrafic(2) - 0.0) < 1e-6);
+    const double venitCazC = m2.simuleazaOraTrafic(2);
+    assert(std::abs(venitCazC - 0.0) < 1e-6);
 
     // 3. Rule of 3: constructor de copiere si operator=
     Magistrala copieConstructor = m2;

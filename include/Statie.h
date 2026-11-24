@@ -23,7 +23,7 @@ public:
            double costConstructie,
            bool nodCorespondenta);
 
-    [[nodiscard]] bool esteDeschisaLaOra(int oraCurenta) const;
+    [[nodiscard]] static bool esteDeschisaLaOra(int oraCurenta);
 
     [[nodiscard]] int calculeazaCererePasageri(int oraCurenta) const;
 

@@ -41,7 +41,7 @@ Statie::Statie(const std::string &nume,
     }
 }
 
-bool Statie::esteDeschisaLaOra(int oraCurenta) const {
+bool Statie::esteDeschisaLaOra(int oraCurenta) {
     valideazaOra(oraCurenta);
     return oraCurenta >= ORA_NOAPTE_STOP && oraCurenta < ORA_NOAPTE_START;
 }
