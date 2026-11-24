@@ -1,0 +1,21 @@
+# Configuratie initiala Metrorex Tycoon
+COMPANIE;Metrorex Bucuresti;12000000.0;6
+
+# Magistrale active
+MAGISTRALA;M1;Pantelimon - Dristor 2;3.0
+MAGISTRALA;M2;Berceni - Pipera;3.0
+
+# Statii M1
+STATIE;M1;Pantelimon;Sector 2;750;180000.0;0
+STATIE;M1;Piata Victoriei;Centru;1400;450000.0;1
+STATIE;M1;Dristor 2;Sector 3;1100;320000.0;1
+
+# Statii M2
+STATIE;M2;Berceni;Sector 4;850;200000.0;0
+STATIE;M2;Piata Unirii;Centru;1600;500000.0;1
+STATIE;M2;Pipera;Sector 2;1800;420000.0;0
+
+# Garnituri initiale
+GARNITURA;M1;Astra IVA;6;180;950.0;3500000.0
+GARNITURA;M2;CAF Inneo;6;200;1200.0;5000000.0
+GARNITURA;M2;Bombardier Movia;6;200;1100.0;4500000.0

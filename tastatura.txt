@@ -1,2 +1,44 @@
+6
+M4
+Gara de Nord 2 - Straulesti
+3.0
+3
+M2
+Universitate
+Centru
+1550
+500000
+0
+4
+M1
+CAF Inneo
+6
+200
+1200
+5000000
+2
+55
 5
-11 22 33 44 55
+4
+M1
+Tren Scump Test
+6
+200
+1500
+999999999
+7
+M2
+1
+Tineretului
+Sector 4
+1000
+300000
+0
+8
+M2
+Tineretului
+9
+M4
+0
+1
+0
