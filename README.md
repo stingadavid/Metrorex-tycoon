@@ -1,4 +1,11 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# Metrorex Tycoon
+
+Simulator de management și dispecerat pentru rețeaua de metrou din București, dezvoltat în C++ în cadrul laboratorului de Programare Orientată pe Obiecte (FMI - CTI).
+
+### Ce îmi propun să implementez
+* **Extinderea rețelei de metrou:** Administrarea magistralelor (`M1`, `M2`, `M3`, `M4`, `M5`) și construirea de stații noi cu costuri și fluxuri de călători specifice.
+* **Dispecerat și flotă de trenuri:** Achiziționarea, trimiterea pe traseu și monitorizarea garniturilor de metrou între stații.
+* **Economie și vânzare de bilete:** Gestionarea bugetului rețelei prin încasări din vânzarea biletelor în funcție de fluxul de pasageri și acoperirea costurilor de întreținere.
 
 ### Folosiți template-ul corespunzător grupei voastre!
 
